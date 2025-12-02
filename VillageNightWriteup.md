@@ -103,7 +103,7 @@ or you can chatGPT and try to understand (please pat yourself at the back if you
 
 That is simply how buffer overflow works in this case!
 
-So now, we know how to buffer overlow into RIP, but what should we do next? We are going to perform `ret2libc` to manipulate the program to execute things that already exist inside libc. Kinda just reuse existing commands inside the program without inputting it ourselves. [Reference](https://ctf101.org/binary-exploitation/return-oriented-programming/))
+So now, we know how to buffer overlow into RIP, but what should we do next? We are going to perform `ret2libc` to manipulate the program to execute things that already exist inside libc. Kinda just reuse existing commands inside the program without inputting it ourselves. [Reference](https://ctf101.org/binary-exploitation/return-oriented-programming/)
 
 So next, to perform ret2libc, i need to know what libc is the program using so i read multiple files and found this inside dockerfile:
 
@@ -176,4 +176,5 @@ And.. thats it for challenge Mac Virus!
 Flag: `MCC{RoP_3@zy_Pe4$y}`
 
 ---
+
 
